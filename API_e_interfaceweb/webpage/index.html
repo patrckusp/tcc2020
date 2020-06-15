@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+        <title>Classifique suas notícias</title>
+    </head>
+    <body>
+        <div class="col-md-12 title">
+            <h1 class="text-center">Classificador de notícias</h1>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-8 offset-md-2 text-center" id="form-input">
+                <form id="new-classifier" method="post" action="">
+                    <div>
+                        <div>
+                            <textarea class="inputs" rows="20" cols="50" name="text" id="news-text"></textarea>
+                        </div>
+                        <div>
+                            <input type="text" class="inputs" name="endpoint" placeholder=" Classifier endpoint" id="classificator-endpoint">
+                        </div>
+                        <div class='div-btn-run'>
+                            <input type="submit" id="btn-run" value="Classificar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 d-none" id="show-results">
+                <div id="news-text-tip">
+
+                </div>
+                <canvas id="chartContainer"></canvas>
+            </div>
+        </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>myPieChart = null; </script>
+    <script src="js/script.js"></script>
+    
+    </body>
+</html>

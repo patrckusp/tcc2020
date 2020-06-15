@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+}
+
+button {
+    border: none;
+    border: 1.0px dashed #000;
+    will-change: opacity;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0px 2px;
+    border-radius: 4px;
+    -webkit-transition: background 0.2s,color 0.1s;
+    transition: background 0.2s,color 0.1s;
+    box-sizing: border-box;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: bu
+}
+
+#show-results {
+    margin-top: 50px;
+}
+
+#btn-run {
+
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 25px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    margin-top: 20px;
+    background-color: #076AAE;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+#news-text-tip {
+    margin-bottom: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+.inputs {
+    width: 100%;
+}
+
+.div-btn-run {
+    margin-top: 5px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.title {
+    margin: 20px 0px;
+}
